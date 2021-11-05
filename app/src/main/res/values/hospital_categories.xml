@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="hospital_categories">
+    <item>Emergência</item>
+    <item>Clinica Médica</item>
+    <item>Pediatria</item>
+  </string-array>
+</resources>

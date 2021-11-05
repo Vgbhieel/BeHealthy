@@ -1,3 +1,7 @@
 <resources>
   <string name="app_name">BeHealthy</string>
+  <string name="app_info">Encontre o hospital mais próximo de forma rápida e prática.</string>
+  <string name="select_hospital_category_text">Selecione abaixo a especialidade médica que o hospital deverá ter.</string>
+  <string name="find_hospitals">Encontrar hospitais</string>
+  <string name="desired_specialty">Especialidade Desejada</string>
 </resources>
