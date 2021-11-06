@@ -9,5 +9,20 @@
     android:id="@+id/mainFragment"
     android:name="me.vitornascimento.behealthy.MainFragment"
     android:label="fragment_main"
-    tools:layout="@layout/fragment_main" />
+    tools:layout="@layout/fragment_main">
+    <action
+      android:id="@+id/action_mainFragment_to_hospitalResultFragment"
+      app:destination="@id/hospitalResult" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/hospitalResult"
+    android:name="me.vitornascimento.behealthy.HospitalResultFragment"
+    android:label="fragment_map"
+    tools:layout="@layout/fragment_hospital_result">
+    <argument
+      android:name="selected_specialty"
+      app:argType="string" />
+  </fragment>
+
 </navigation>

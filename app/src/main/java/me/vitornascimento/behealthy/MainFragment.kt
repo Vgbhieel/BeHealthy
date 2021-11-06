@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import me.vitornascimento.behealthy.databinding.FragmentMainBinding
 
 class MainFragment : Fragment(R.layout.fragment_main) {
@@ -39,11 +39,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     }
 
     binding.btnFindHospital.setOnClickListener {
-      Toast.makeText(
-        requireContext(),
-        (binding.dropdownMenu.editText as AutoCompleteTextView).text.toString(),
-        Toast.LENGTH_SHORT
-      ).show()
+      (binding.dropdownMenu.editText as AutoCompleteTextView).text.toString().let {
+        findNavController().navigate(MainFragmentDirections.actionMainFragmentToHospitalResultFragment(it))
+      }
     }
   }
 
