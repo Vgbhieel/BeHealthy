@@ -19,6 +19,7 @@ android {
         Properties properties = new Properties()
         properties.load(project.rootProject.file('local.properties').newDataInputStream())
         resValue "string", "maps_key", properties.getProperty("maps.key")
+        resValue "string", "places_key", properties.getProperty("places.key")
     }
 
     buildTypes {
@@ -68,5 +69,8 @@ dependencies {
 
     // GSON
     implementation 'com.google.code.gson:gson:2.8.9'
+
+    // PLACES SDK
+    implementation 'com.google.android.libraries.places:places:2.5.0'
 
 }
