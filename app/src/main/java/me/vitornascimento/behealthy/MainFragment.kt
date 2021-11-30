@@ -40,7 +40,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
     binding.btnFindHospital.setOnClickListener {
       (binding.dropdownMenu.editText as AutoCompleteTextView).text.toString().let {
-        findNavController().navigate(MainFragmentDirections.actionMainFragmentToHospitalResultFragment(it))
+        findNavController().navigate(MainFragmentDirections.actionMainFragmentToHospitalResultFragment())
       }
     }
   }
