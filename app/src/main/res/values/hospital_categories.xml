@@ -4,5 +4,10 @@
     <item>Emergência</item>
     <item>Clinica Médica</item>
     <item>Pediatria</item>
+    <item>Ginecologia</item>
+    <item>Oncologia</item>
+    <item>Urologia</item>
+    <item>Oftalmologia</item>
+    <item>Geriatria</item>
   </string-array>
 </resources>
